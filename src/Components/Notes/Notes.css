@@ -1,0 +1,66 @@
+.notes {
+  grid-area: notes;
+  padding: 10px;
+}
+
+.notes .notes-container {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.notes .notes-container .notes-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5px;
+}
+
+.notes .notes-container .notes-textarea {
+  position: relative;
+  padding: 0 10px;
+}
+
+.notes .notes-container .notes-textarea textarea {
+  resize: none;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 20px;
+  border: none;
+  background-color: #eaeef4;
+}
+
+.notes .notes-container .notes-textarea textarea:focus {
+  outline: none;
+}
+
+.notes .notes-container .notes-textarea button {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  border: none;
+  background-color: blue;
+  padding: 10px 8px;
+  border-radius: 3px;
+  color: white;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.notes .notes-container .notes-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notes .notes-container .notes-info .notes-doctorInfo .bottom {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notes .notes-container .notes-info .notes-doctorInfo .bottom div {
+  display: flex;
+  margin: 3px;
+}

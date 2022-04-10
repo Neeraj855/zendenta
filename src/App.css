@@ -1,38 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ebeef4;
+  color: #283049;
+}
+
+ul {
+  list-style: none;
+  color: #283049;
+}
+
+a {
+  text-decoration: none;
+  color: #283049;
+}
+
+button {
+  cursor: pointer;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  width: 95vw;
+  height: 95vh;
+  border: 6px solid black;
+  border-radius: 25px;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 1.2fr;
+  grid-template-rows: 0.4fr 1.3fr 1.3fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "navbar navbar navbar"
+    "patientInfo patientInfo notes"
+    "appointments appointments documents";
+}
+
+@media screen and (max-width: 1030px) {
+  main {
+    grid-template-columns: 1.5fr 0.8fr 0.7fr;
+    grid-template-rows: 0.6fr repeat(2, 1fr) 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "navbar navbar navbar"
+      "patientInfo patientInfo patientInfo"
+      "appointments appointments appointments"
+      "notes documents documents";
+
+    max-height: 100vh;
+    overflow-y: scroll;
   }
 }

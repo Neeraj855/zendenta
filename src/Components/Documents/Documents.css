@@ -1,0 +1,45 @@
+.documents {
+  grid-area: documents;
+  padding: 10px;
+}
+
+.documents-container {
+  padding: 20px 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.documents-container .documents-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.documents-container .documents-heading .add-files {
+  display: flex;
+  align-items: center;
+}
+.documents-container .documents-heading .add-files svg {
+  color: blue;
+  font-size: 20px;
+}
+.documents-container .documents-contents {
+  color: gray;
+  margin-top: 5px;
+}
+
+.documents-container .documents-contents .document {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.2px solid #eee;
+}
+
+.document .document-left {
+  display: flex;
+  padding: 12px 5px;
+}
+
+.document .document-left svg {
+  margin-right: 3px;
+}

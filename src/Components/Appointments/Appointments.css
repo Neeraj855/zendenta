@@ -1,0 +1,105 @@
+.appointments {
+  grid-area: appointments;
+  padding: 10px;
+}
+
+.appointments-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.appointments-container .appointments-nav {
+  background-color: #eff1f7;
+  border-radius: 8px;
+  width: 500px;
+}
+
+.appointments-container .appointments-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding: 6px 0;
+}
+
+.appointments-container .appointments-nav ul li {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.appointments-container .appointments-nav ul li a {
+  font-weight: 600;
+}
+
+.appointments-container .appointments-nav ul li.active {
+  background-color: white;
+}
+
+.appointments-container .appointments-nav ul li.active a {
+  color: blue;
+}
+
+.appointments-page {
+  background-color: #eff1f7;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.appointments-page .appointments-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  height: 40px;
+}
+
+.appointments-page .appointments-heading button {
+  color: gray;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 180px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.appointments-page hr {
+  border: 0.2px solid rgb(193, 190, 190);
+}
+
+.appointments-page .timeline-section {
+  margin: 0 30px;
+  width: 100%;
+  max-height: 120px;
+  border-left: 2px solid blue;
+  overflow-y: scroll;
+}
+
+.appointments-page .timeline-section .timeline-info {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: 20px;
+  padding: 5px 20px;
+}
+
+.appointments-page .timeline-section .timeline-info .timeline-doctor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.appointments-page .timeline-section .timeline-info .timeline-note {
+  display: flex;
+  width: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
